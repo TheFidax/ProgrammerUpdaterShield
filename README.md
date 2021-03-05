@@ -15,6 +15,8 @@ Incorpora resistori di PullUp per il Bus I2C Wire disattivabili tramite interrut
   - [Porta AVR ISP](#Porta-AVR-ISP)
   - [Porta JST](#Porta-JST)
   - [Selettore Reset](#Selettore-Reset)
+  - [ISP LED](#ISP-LED)
+  - [LED Modalita'](#LED-Modalita)
 * [File Gerber](#File-Gerber)
 * [HardWare](#HardWare)
 
