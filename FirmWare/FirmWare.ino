@@ -5,30 +5,21 @@
 
 #define I2C_PULLUP 3
 
-typedef enum { error_mode, ISP, I2C } Mode;
+typedef enum { ISP, I2C } Mode;
 Mode mode = error_mode;
 
 void setup() {
   pinMode(ISP_LED, OUTPUT);
   pinMode(I2C_LED, OUTPUT);
 
-  Serial.begin(9600);
-
-  while(!Serial) {}
-
-  if(Serial.available() > 0) {
-    mode = I2C;
-  }
-  else {
+  if(digitalRead(I2C_PULLUP) == HIGH) {
     mode = ISP;
   }
-
-  Serial.end();
+  else {
+    mode = I2C;
+  }
   
   if (mode == ISP) {
-    if(digitalRead(I2C_PULLUP) == HIGH) {
-        error_blink();
-    }
     digitalWrite(ISP_LED, HIGH);
     setup_ArduinoISP();
     while(1) {
@@ -37,9 +28,6 @@ void setup() {
   }
   else if (mode == I2C) {
     digitalWrite(I2C_LED, HIGH);
-    error_blink();
-  }
-  else {
     error_blink();
   }
 }
