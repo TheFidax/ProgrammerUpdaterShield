@@ -43,17 +43,20 @@ In sviluppo.
 ------------
 
 # Caratteristiche della Shield
-**Porte ISP**</br>
+**Porta AVR ISP**</br>
 
 <img src="https://github.com/TheFidax/ProgrammerUpdaterShield/blob/main/images/isp_port.jpg" width="1280">
-Le porte ISP permettono alla Shield di interfacciarsi con i target.
-
-E' presente una porta ISP a 10 poli che segue lo schema standard degli AVR:</br>
+La porta AVER ISP permette alla Shield di interfacciarsi con i target esterni e rispecchia lo schema standard degli AVR:</br>
 <img src="https://www.waveshare.com/img/devkit/general/10-pin_ISP_Connector_standard.jpg" width="400"></br>
 **N.B.** Il pin *VCC* e' collegato alla linea **5 volt**.
 
-E' poi presente una porta JST SH6 che fornisce, al posto dei 5 volt, una linea *non regolata* collegata al pin **VIN** di Arduino.</br> 
+------------
+
+**Porta JST ISP/I2C**
+E' presente una porta JST SH6 che fornisce, al posto dei 5 volt, una linea *non regolata* collegata al pin **VIN** di Arduino.</br> 
 <img src="https://github.com/TheFidax/ProgrammerUpdaterShield/blob/main/images/jst_scheme.jpg" width="1280"></br>
+
+Tale porta fornisce inoltre il Bus I2C mediante il seguente schema:</br>
 
 ------------
 
