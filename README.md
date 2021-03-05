@@ -65,7 +65,22 @@ Tramite questo ponticello e' possibile reindirizzare la linea di Reset delle **P
 
 ------------
 
-
 **ISP LED**</br>
 
 <img src="https://github.com/TheFidax/ProgrammerUpdaterShield/blob/main/images/isp_led.jpg" width="1280"></br>
+
+LED di stato della programmazione ISP, per maggiori informazioni leggere la seguente [pagina](https://www.arduino.cc/en/Tutorial/BuiltInExamples/ArduinoISP#load-the-sketch)</br>
+
+------------
+
+**LED Modalita'**</br>
+
+<img src="https://github.com/TheFidax/ProgrammerUpdaterShield/blob/main/images/mode_led.jpg" width="1280"></br>
+
+Questi led forniscono un riscontro visivo sulla Modalita' (I2C o ISP) attualmente in esecuzione nel Firmware.
+
+------------
+
+**I2C Resistori PullUp**
+
+<img src="https://github.com/TheFidax/ProgrammerUpdaterShield/blob/main/images/i2c_pullup.jpg" width="1280"></br>
