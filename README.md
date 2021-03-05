@@ -93,7 +93,7 @@ Quando i resistori sono attivi, il firmware entrera' in modalita' I2C; in caso d
 ------------
 
 # File Gerber
-Nella cartella [Hardware] sono presenti i file, in formato .zip, Gerber per la produzione in proprio della Shield.
+Nella cartella [Hardware](https://github.com/TheFidax/ProgrammerUpdaterShield/tree/main/HardWare) sono presenti i file, in formato .zip, Gerber per la produzione in proprio della Shield.
 
 ------------
 
