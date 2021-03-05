@@ -14,4 +14,7 @@ Incorpora resistori di PullUp per il Bus I2C Wire disattivabili tramite interrut
 * [Tipi di Dati](#Tipi-di-Dati)
 * [Funzionalita' Extra](#Funzionalita-Extra)
 
+------------
+
 # FirmWare
+Il Firmware pensato per la shield e' disponibile sotto la cartella **[HEX]**(https://github.com/mrrwa/NmraDcc)
