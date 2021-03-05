@@ -7,9 +7,7 @@ Incorpora resistori di PullUp per il Bus I2C Wire disattivabili tramite interrut
 
 https://www.youtube.com/watch?v=IqJMNM9UHXg
 
- <iframe> width="420" height="315"
-src="https://www.youtube.com/embed/tgbNymZ7vqY">
-</iframe>  
+[![SC2 Video](https://img.youtube.com/vi/IqJMNM9UHXg/0.jpg)](http://www.youtube.com/watch?v=IqJMNM9UHXg) 
 
 ------------
 
