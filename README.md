@@ -86,3 +86,4 @@ Questi led forniscono un riscontro visivo sulla Modalita' (I2C o ISP) attualment
 La shield monta due resistori di *pullup* da **2kΩ** per il bus I2C Wire a 400kHz. </br>
 Tali resistori sono abilitabili tramite un interruttore, il riscontro visibo sull'effettiva abilitazione e' fornito da un Led che risultera' acceso quando i resistori sono attivi.</br>
 Quando i resistori sono attivi, il firmware entrera' in modalita' I2C; in caso di *spostamento interruttore* con scheda Arduino alimentata **e' necessario** eseguie un reset della scheda per rendere edffettivo il passaggio da una modalita' all'altra.</br>
+**ATTENZIONE**: 
