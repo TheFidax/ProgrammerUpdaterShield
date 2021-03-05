@@ -43,8 +43,8 @@ In sviluppo.
 
 ------------
 
-# Caratteristiche della Shield
-####**Porta AVR ISP**</br>
+## Caratteristiche della Shield
+#### **Porta AVR ISP**</br>
 
 <img src="https://github.com/TheFidax/ProgrammerUpdaterShield/blob/main/images/avr_isp.jpg" width="1280">
 La porta AVER ISP permette alla Shield di interfacciarsi con i target esterni e rispecchia lo schema standard degli AVR:</br>
