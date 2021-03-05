@@ -45,5 +45,8 @@ In sviluppo.
 # Caratteristiche HardWare
 **Porte ISP**</br>
 <img src="https://github.com/TheFidax/ProgrammerUpdaterShield/blob/main/images/isp_port.jpg" width="1280">
-Le porte ISP permettono alla Shield di interfacciarsi con i target, e' presente una porta ISP a 10 poli che segue lo schema standard degli AVR:
+Le porte ISP permettono alla Shield di interfacciarsi con i target.
+
+E' presente una porta ISP a 10 poli che segue lo schema standard degli AVR:</br>
 <img src="https://www.waveshare.com/img/devkit/general/10-pin_ISP_Connector_standard.jpg" width="400">
+**N.B.** Il pin *VCC* e' collegato alla linea **5 volt**.
