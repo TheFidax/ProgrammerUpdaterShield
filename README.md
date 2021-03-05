@@ -59,6 +59,7 @@ E' presente una porta JST SH6 che fornisce, al posto dei 5 volt, una linea *non 
 <img src="https://github.com/TheFidax/ProgrammerUpdaterShield/blob/main/images/jst_scheme.jpg" width="1280"></br>
 
 Tale porta fornisce inoltre il Bus I2C mediante il seguente schema:</br>
+<img src="https://github.com/TheFidax/ProgrammerUpdaterShield/blob/main/images/jst_i2c.jpg" width="600">
 
 ------------
 
