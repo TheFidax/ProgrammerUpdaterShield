@@ -1,7 +1,7 @@
-setup_ArduinoI2C() {
+void setup_ArduinoI2C() {
   
 }
 
-loop_ArduinoI2C() {
+void loop_ArduinoI2C() {
   
 }
