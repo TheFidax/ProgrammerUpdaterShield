@@ -17,6 +17,7 @@ Incorpora resistori di PullUp per il Bus I2C Wire disattivabili tramite interrut
   - [Selettore Reset](#Selettore-Reset)
   - [ISP LED](#ISP-LED)
   - [LED Modalita'](#LED-Modalita)
+  - [I2C Resistori PullUp](#I2C-Resistori-PullUp)
 * [File Gerber](#File-Gerber)
 * [HardWare](#HardWare)
 
@@ -115,3 +116,4 @@ Nella cartella [Hardware](https://github.com/TheFidax/ProgrammerUpdaterShield/tr
 ------------
 
 ## HardWare
+Maggori informazioni sull'HardWare della Shield sono reperibili dentro la cartella [HardWare](https://github.com/TheFidax/ProgrammerUpdaterShield/tree/main/HardWare).
