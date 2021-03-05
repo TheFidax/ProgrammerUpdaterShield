@@ -48,5 +48,7 @@ In sviluppo.
 Le porte ISP permettono alla Shield di interfacciarsi con i target.
 
 E' presente una porta ISP a 10 poli che segue lo schema standard degli AVR:</br>
-<img src="https://www.waveshare.com/img/devkit/general/10-pin_ISP_Connector_standard.jpg" width="400">
+<img src="https://www.waveshare.com/img/devkit/general/10-pin_ISP_Connector_standard.jpg" width="400"></br>
 **N.B.** Il pin *VCC* e' collegato alla linea **5 volt**.
+
+E' poi presente una porta JST SH6 che fornisce, al posto dei 5 volt, una linea *non regolata* collegata al pin **VIN** di Arduino.</br> 
