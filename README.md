@@ -57,9 +57,9 @@ E' poi presente una porta JST SH6 che fornisce, al posto dei 5 volt, una linea *
 
 ------------
 
-** Selettore Reset **</br>
+**Selettore Reset**</br>
 
-<img src="https://github.com/TheFidax/ProgrammerUpdaterShield/blob/main/images/jst_scheme.jpg" width="1280"></br>
+<img src="https://github.com/TheFidax/ProgrammerUpdaterShield/blob/main/images/reset_target.jpg" width="1280"></br>
 
 Tramite questo ponticello e' possibile reindirizzare la linea di Reset delle **Porte ISP** al micro della Scheda Arduino; **e' utile** per poter utilizzare un *programmatore ISP* dotato di porta AVR a 10 pin per scrivere il BootLoader sulla scheda Arduino.</br>
 
