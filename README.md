@@ -13,7 +13,7 @@ Incorpora resistori di PullUp per il Bus I2C Wire disattivabili tramite interrut
   - [Modalita' I2C](#Modalita-I2C)
 * [Caratteristiche della Shield](#Caratteristiche-della-SHield) 
   - [Porta AVR ISP](#Porta-AVR-ISP)
-  - [Porta JST ISP/I2C](#Porta-JST-ISP-/-I2C)
+  - [Porta JST](#Porta-JST)
   - [Selettore Reset](#Selettore-Reset)
 * [File Gerber](#File-Gerber)
 * [HardWare](#HardWare)
@@ -58,11 +58,12 @@ La porta AVER ISP permette alla Shield di interfacciarsi con i target esterni e 
 
 ------------
 
-#### **Porta JST ISP/I2C**
+#### **Porta JST**
 
 <img src="https://github.com/TheFidax/ProgrammerUpdaterShield/blob/main/images/jst_isp.jpg" width="1280">
 
 E' presente una porta JST SH6 che fornisce, al posto dei 5 volt, una linea *non regolata* collegata al pin **VIN** di Arduino.</br> 
+Questa porta svolge la doppia funzione di **Porta ISP** e **Porta I2C**.</br>
 
 <img src="https://github.com/TheFidax/ProgrammerUpdaterShield/blob/main/images/jst_scheme.jpg" width="1280"></br>
 
