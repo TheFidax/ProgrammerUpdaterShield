@@ -1,6 +1,7 @@
 ## Video Presentazione Shield
 
-[![Video](https://img.youtube.com/vi/W56MJeqaCEg/0.jpg)](http://www.youtube.com/watch?v=W56MJeqaCEg)]
+[![Video](https://img.youtube.com/vi/W56MJeqaCEg/0.jpg)](http://www.youtube.com/watch?v=W56MJeqaCEg)
+[![Alt text for your video](https://img.youtube.com/vi/VIDEO-ID/0.jpg)](http://www.youtube.com/watch?v=VIDEO-ID)
 
 ## Programmer & Updater Shield
 Questa shield e' pensata per rendere comoda l'aggiornamento dei FirmWare sulle schede di illuminazione.</br>
