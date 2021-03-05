@@ -2,7 +2,6 @@
 
 
 [![Video Presentazione](https://img.youtube.com/vi/W56MJeqaCEg/0.jpg)](http://www.youtube.com/watch?v=W56MJeqaCEg)
-[![Alt text for your video](https://img.youtube.com/vi/YoJqOO1FAPk/0.jpg)](http://www.youtube.com/watch?v=YoJqOO1FAPk)
 
 ------------
 
