@@ -23,5 +23,6 @@ Per caricare il Firmware e' necessario inserire i seguenti parametri nel softwar
 - **Programmer (-c)** : *Arduino*
 - **Port (-P)** : la porta COM a cui e' connessa la scheda Arduino
 - **Baud rate (-b)** : 115200
-- **Flahs** : il file FIrmWare.hex scaricato
+- Premere **Detect** : Nel *console* verra' restituito il modello del Micro montato sulla Scheda
+- **Flash** : il file FIrmWare.hex scaricato
 - Infine premere **Programm**
