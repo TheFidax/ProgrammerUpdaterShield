@@ -11,9 +11,20 @@ Mode mode = error_mode;
 void setup() {
   pinMode(ISP_LED, OUTPUT);
   pinMode(I2C_LED, OUTPUT);
-  
-  mode = ISP;
 
+  Serial.begin(9600);
+
+  while(!Serial) {}
+
+  if(Serial.available() > 0) {
+    mode = I2C;
+  }
+  else {
+    mode = ISP;
+  }
+
+  Serial.end();
+  
   if (mode == ISP) {
     if(digitalRead(I2C_PULLUP) == HIGH) {
         error_blink();
