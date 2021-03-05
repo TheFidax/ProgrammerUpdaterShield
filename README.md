@@ -26,3 +26,4 @@ Per caricare il Firmware e' necessario inserire i seguenti parametri nel softwar
 - Premere **Detect** : Nel *console* verra' restituito il modello del Micro montato sulla Scheda
 - **Flash** : il file FIrmWare.hex scaricato
 - Infine premere **Programm**
+<img src="https://github.com/TheFidax/ProgrammerUpdaterShield/blob/main/images/AVRDUDESS.jpg" width="1280">
