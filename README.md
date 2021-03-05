@@ -38,3 +38,9 @@ Le due modalita' sono *selezionabili* tramite l'interruttore dei resistori di Pu
 La modalita' ISP e' basta sul software [ArduinoAsISP](https://www.arduino.cc/en/Tutorial/BuiltInExamples/ArduinoISP) e permette di utilizzare la scheda Arduino come programmatore ISP per target esterni, utile per scrivere bootloader o per caricare Sketch senza l'ausilio del Bootloader.</br>
 
 *Modalita' I2C*:</br>
+In sviluppo.
+
+------------
+
+# Caratteristiche HardWare
+**Porte ISP**</br>
