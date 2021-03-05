@@ -58,6 +58,7 @@ La porta AVER ISP permette alla Shield di interfacciarsi con i target esterni e 
 <img src="https://github.com/TheFidax/ProgrammerUpdaterShield/blob/main/images/jst_isp.jpg" width="1280">
 
 E' presente una porta JST SH6 che fornisce, al posto dei 5 volt, una linea *non regolata* collegata al pin **VIN** di Arduino.</br> 
+
 <img src="https://github.com/TheFidax/ProgrammerUpdaterShield/blob/main/images/jst_scheme.jpg" width="1280"></br>
 
 Tale porta fornisce inoltre il Bus I2C mediante il seguente schema:</br>
