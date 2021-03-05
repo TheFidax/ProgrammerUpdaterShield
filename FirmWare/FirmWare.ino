@@ -28,6 +28,10 @@ void setup() {
   }
   else if (mode == I2C) {
     digitalWrite(I2C_LED, HIGH);
+    setup_ArduinoI2C()
+    while(1) {
+      loop_ArduinoI2C()
+    }
   }
 }
 
