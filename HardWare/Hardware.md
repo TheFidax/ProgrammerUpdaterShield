@@ -25,4 +25,4 @@ https://workspace.circuitmaker.com/Projects/Details/luca-fidanza/Programmer-e-Up
 - ISP : LED 0805 Arancione
 - PullUp : LED 0805 Arancione
 - D1, D2 : SS310
-- SW2 : 
+- SW2 : Switch 3pos 2.50mm
