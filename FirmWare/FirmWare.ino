@@ -38,7 +38,7 @@ void loop() {
 
 void error_blink(uint8_t pin) {
   while(1) {
-    digitalWrite(pinED, HIGH);
+    digitalWrite(pin, HIGH);
     delay(500);
     digitalWrite(pin, LOW);
     delay(500);
