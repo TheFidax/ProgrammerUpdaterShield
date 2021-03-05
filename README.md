@@ -32,7 +32,8 @@ Per caricare il Firmware e' necessario inserire i seguenti parametri nel softwar
 
 # Modalita' Di Funzionamento
 La shield presenta *due modalita'* di funzionamento: **ISP** e **I2C**.</br>
-Le due modalita' sono *selezionabili* tramite l'interruttore dei resistori di PullUp: se i resistori sono attivi (LED acceso) e' attiva la modalita' **I2C**, se i led e' spento e' attiva la modalita' *ISP*.
+Le due modalita' sono *selezionabili* tramite l'interruttore dei resistori di PullUp: se i resistori sono attivi (LED acceso) e' attiva la modalita' **I2C**, se i led e' spento e' attiva la modalita' *ISP*.</br>
+*Per passare da una modalita' all'altra*, dopo aver mosso l'interruttore, **e' necessario** eseguire un *Reset* della scheda Arduino mediante apposito pulsante.
 
 *Modalita' ISP*:</br>
 La modalita' ISP e' basta sul software [ArduinoAsISP](https://www.arduino.cc/en/Tutorial/BuiltInExamples/ArduinoISP) e permette di utilizzare la scheda Arduino come programmatore ISP per target esterni, utile per scrivere bootloader o per caricare Sketch senza l'ausilio del Bootloader.</br>
