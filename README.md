@@ -17,4 +17,11 @@ Incorpora resistori di PullUp per il Bus I2C Wire disattivabili tramite interrut
 ------------
 
 # FirmWare
-Il Firmware pensato per la shield e' disponibile sotto la cartella [HEX](https://github.com/TheFidax/ProgrammerUpdaterShield/tree/main/HEX)
+Il Firmware pensato per la shield e' disponibile sotto la cartella [HEX](https://github.com/TheFidax/ProgrammerUpdaterShield/tree/main/HEX)</br>
+Il firmware e' gia' pronto per l'upload sulla scheda Arduino tramite [AVRDUDESS](https://blog.zakkemble.net/avrdudess-a-gui-for-avrdude/)</br>
+Per caricare il Firmware e' necessario inserire i seguenti parametri nel software:
+- **Programmer (-c)** : *Arduino*
+- **Port (-P)** : la porta COM a cui e' connessa la scheda Arduino
+- **Baud rate (-b)** : 115200
+- **Flahs** : il file FIrmWare.hex scaricato
+- Infine premere **Programm**
