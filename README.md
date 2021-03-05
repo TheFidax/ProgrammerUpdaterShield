@@ -9,10 +9,7 @@ Incorpora resistori di PullUp per il Bus I2C Wire disattivabili tramite interrut
 # Indice
 * [Upload FirmWare](#Upload-FirmWare)
 * [Modalita' Di Funzionamento](#Modalita-Di-Funzionamento)
-* [Caratteristiche HardWare](#Caratteristiche-HardWare)
-* [Metodi Manipolazione CVs](#Metodi-Manipolazione-CVs)
-* [Tipi di Dati](#Tipi-di-Dati)
-* [Funzionalita' Extra](#Funzionalita-Extra)
+* [Caratteristiche della Shield](#Caratteristiche-della-SHield) 
 
 ------------
 
@@ -43,7 +40,7 @@ In sviluppo.
 
 ------------
 
-# Caratteristiche HardWare
+# Caratteristiche della Shield
 **Porte ISP**</br>
 
 <img src="https://github.com/TheFidax/ProgrammerUpdaterShield/blob/main/images/isp_port.jpg" width="1280">
@@ -85,3 +82,7 @@ Questi led forniscono un riscontro visivo sulla Modalita' (I2C o ISP) attualment
 **I2C Resistori PullUp**
 
 <img src="https://github.com/TheFidax/ProgrammerUpdaterShield/blob/main/images/i2c_pullup.jpg" width="1280"></br>
+
+La shield monta due resistori di *pullup* da **2kΩ** per il bus I2C Wire a 400kHz. </br>
+Tali resistori sono abilitabili tramite un interruttore, il riscontro visibo sull'effettiva abilitazione e' fornito da un Led che risultera' acceso quando i resistori sono attivi.</br>
+Quando i resistori sono attivi, il firmware entrera' in modalita' I2C; in caso di *spostamento interruttore* con scheda Arduino alimentata **e' necessario** eseguie un reset della scheda per rendere edffettivo il passaggio da una modalita' all'altra.</br>
