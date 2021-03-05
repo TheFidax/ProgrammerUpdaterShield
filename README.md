@@ -7,8 +7,8 @@ Incorpora resistori di PullUp per il Bus I2C Wire disattivabili tramite interrut
 ------------
 
 # Indice
-* [FirmWare](#FirmWare)
-* [Metodi Obbligatori](#Metodi-Obbligatori)
+* [Upload FirmWare](#Upload-FirmWare)
+* [Modalita' Di Funzionamento](#Modalita-Di-Funzionamento)
 * [Metodi Facoltativi](#Metodi-Facoltativi)
 * [Metodi Manipolazione CVs](#Metodi-Manipolazione-CVs)
 * [Tipi di Dati](#Tipi-di-Dati)
@@ -16,7 +16,7 @@ Incorpora resistori di PullUp per il Bus I2C Wire disattivabili tramite interrut
 
 ------------
 
-# FirmWare
+# Upload FirmWare
 Il Firmware pensato per la shield e' disponibile sotto la cartella [HEX](https://github.com/TheFidax/ProgrammerUpdaterShield/tree/main/HEX)</br>
 Il firmware e' gia' pronto per l'upload sulla scheda Arduino tramite [AVRDUDESS](https://blog.zakkemble.net/avrdudess-a-gui-for-avrdude/)</br>
 Per caricare il Firmware e' necessario inserire i seguenti parametri nel software:
@@ -27,3 +27,12 @@ Per caricare il Firmware e' necessario inserire i seguenti parametri nel softwar
 - **Flash** : il file FIrmWare.hex scaricato
 - Infine premere **Programm**
 <img src="https://github.com/TheFidax/ProgrammerUpdaterShield/blob/main/images/AVRDUDESS.jpg" width="1280">
+
+------------
+
+# Modalita' Di Funzionamento
+La shield presenta *due modalita'* di funzionamento: **ISP** e **I2C**.</br>
+*Modalita' ISP*:</br>
+La modalita' ISP e' basta sul software [ArduinoAsISP]() e permette di utilizzare la scheda Arduino come programmatore ISP per target esterni, utile per scrivere bootloader o per caricare Sketch senza l'ausilio del Bootloader.</br>
+
+*Modalita' I2C*:</br>
