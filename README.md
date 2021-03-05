@@ -35,6 +35,6 @@ La shield presenta *due modalita'* di funzionamento: **ISP** e **I2C**.</br>
 Le due modalita' sono *selezionabili* tramite l'interruttore dei resistori di PullUp: se i resistori sono attivi (LED acceso) e' attiva la modalita' **I2C**, se i led e' spento e' attiva la modalita' *ISP*.
 
 *Modalita' ISP*:</br>
-La modalita' ISP e' basta sul software [ArduinoAsISP]() e permette di utilizzare la scheda Arduino come programmatore ISP per target esterni, utile per scrivere bootloader o per caricare Sketch senza l'ausilio del Bootloader.</br>
+La modalita' ISP e' basta sul software [ArduinoAsISP](https://www.arduino.cc/en/Tutorial/BuiltInExamples/ArduinoISP) e permette di utilizzare la scheda Arduino come programmatore ISP per target esterni, utile per scrivere bootloader o per caricare Sketch senza l'ausilio del Bootloader.</br>
 
 *Modalita' I2C*:</br>
