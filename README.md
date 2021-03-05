@@ -4,6 +4,8 @@ Mette a disposizione un connettore JST SH6 pre configurato per le schede di illu
 Incorpora resistori di PullUp per il Bus I2C Wire disattivabili tramite interruttore.
 <img src="https://github.com/TheFidax/ProgrammerUpdaterShield/blob/main/images/shield.jpg" width="1280">
 
+https://www.youtube.com/watch?v=IqJMNM9UHXg
+
 ------------
 
 ## Indice
