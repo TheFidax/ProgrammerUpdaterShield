@@ -10,6 +10,7 @@ Incorpora resistori di PullUp per il Bus I2C Wire disattivabili tramite interrut
 * [Upload FirmWare](#Upload-FirmWare)
 * [Modalita' Di Funzionamento](#Modalita-Di-Funzionamento)
 * [Caratteristiche della Shield](#Caratteristiche-della-SHield) 
+  - [Porta AVR ISP](#Porta-AVR-ISP)
 * [File Gerber](#File-Gerber)
 * [HardWare](#HardWare)
 
