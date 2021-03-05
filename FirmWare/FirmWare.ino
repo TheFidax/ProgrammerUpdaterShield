@@ -6,6 +6,7 @@
 #define I2C_PULLUP 3
 
 typedef enum { ISP, I2C } Mode;
+Mode mode;
 
 void setup() {
   pinMode(ISP_LED, OUTPUT);
