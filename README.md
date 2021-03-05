@@ -14,6 +14,7 @@ Incorpora resistori di PullUp per il Bus I2C Wire disattivabili tramite interrut
 * [Caratteristiche della Shield](#Caratteristiche-della-SHield) 
   - [Porta AVR ISP](#Porta-AVR-ISP)
   - [Porta JST ISP/I2C](#Porta-JST-ISP-I2C)
+  - [Selettore Reset](#Selettore-Reset)
 * [File Gerber](#File-Gerber)
 * [HardWare](#HardWare)
 
