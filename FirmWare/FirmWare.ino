@@ -13,10 +13,10 @@ void setup() {
   pinMode(I2C_LED, OUTPUT);
 
   if(digitalRead(I2C_PULLUP) == HIGH) {
-    mode = ISP;
+    mode = I2C;
   }
   else {
-    mode = I2C;
+    mode = ISP;
   }
   
   if (mode == ISP) {
@@ -28,7 +28,7 @@ void setup() {
   }
   else if (mode == I2C) {
     digitalWrite(I2C_LED, HIGH);
-    error_blink();
+    error_blink(ISP_LED);
   }
 }
 
@@ -36,13 +36,11 @@ void loop() {
 
 }
 
-void error_blink(void) {
+void error_blink(uint8_t pin) {
   while(1) {
-    digitalWrite(ISP_LED, HIGH);
-    digitalWrite(I2C_LED, HIGH);
+    digitalWrite(pinED, HIGH);
     delay(500);
-    digitalWrite(ISP_LED, LOW);
-    digitalWrite(I2C_LED, LOW);
+    digitalWrite(pin, LOW);
     delay(500);
   }
 }
