@@ -9,7 +9,7 @@ Incorpora resistori di PullUp per il Bus I2C Wire disattivabili tramite interrut
 # Indice
 * [Upload FirmWare](#Upload-FirmWare)
 * [Modalita' Di Funzionamento](#Modalita-Di-Funzionamento)
-* [Metodi Facoltativi](#Metodi-Facoltativi)
+* [Caratteristiche HardWare](#Caratteristiche-HardWare)
 * [Metodi Manipolazione CVs](#Metodi-Manipolazione-CVs)
 * [Tipi di Dati](#Tipi-di-Dati)
 * [Funzionalita' Extra](#Funzionalita-Extra)
@@ -44,6 +44,7 @@ In sviluppo.
 
 # Caratteristiche HardWare
 **Porte ISP**</br>
+
 <img src="https://github.com/TheFidax/ProgrammerUpdaterShield/blob/main/images/isp_port.jpg" width="1280">
 Le porte ISP permettono alla Shield di interfacciarsi con i target.
 
