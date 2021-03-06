@@ -46,12 +46,12 @@ Per caricare il Firmware e' necessario inserire i seguenti parametri nel softwar
 ------------
 
 ## Caricare FirmWare su un Dispositivo
-Per caricare un FirmWare/Skecth in formato .HEX su un dispositivo sono necessari i seguenti passaggi (sono **molto** simili a quelli per caricare il Firmware della Shield, ma **non identici**):
+Per caricare un FirmWare/Skecth in formato .HEX, dopo aver collegato la Shield al dispositivo mediante AVR ISP oppure JST ISP, su un dispositivo sono necessari i seguenti passaggi (sono **molto** simili a quelli per caricare il Firmware della Shield, ma **non identici**):
 - **Programmer (-c)** : *Arduino*
 - **Port (-P)** : la porta COM a cui e' connessa la scheda Arduino
 - **Baud rate (-b)** : **19200**
 - Premere **Detect** : Nella *console* verra' restituito il modello del Micro che *si intende programmare*
-- **Flash** : il file .hex che si vuole caricare
+- **Flash** : il file .hex che *si vuole caricare*
 - Infine premere **Programm**
 
 ------------
