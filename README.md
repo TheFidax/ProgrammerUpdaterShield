@@ -15,6 +15,7 @@ Incorpora resistori di PullUp per il Bus I2C Wire disattivabili tramite interrut
 
 ## Indice
 * [Upload FirmWare](#Upload-FirmWare)
+* [Caricare FirmWare su un Dispositivo](#Caricare-FirmWare-su-un-Dispositivo)
 * [Modalita' Di Funzionamento](#Modalita-Di-Funzionamento)
   - [Modalita' ISP](#Modalita-ISP)
   - [Modalita' I2C](#Modalita-I2C)
@@ -32,7 +33,7 @@ Incorpora resistori di PullUp per il Bus I2C Wire disattivabili tramite interrut
 
 ## Upload FirmWare
 Il Firmware pensato per la shield e' disponibile sotto la cartella [HEX](https://github.com/TheFidax/ProgrammerUpdaterShield/tree/main/HEX)</br>
-Il firmware e' gia' pronto per l'upload sulla scheda Arduino tramite [AVRDUDESS](https://blog.zakkemble.net/avrdudess-a-gui-for-avrdude/)</br>
+Il Firmware e' gia' pronto per l'upload sulla scheda Arduino tramite [AVRDUDESS](https://blog.zakkemble.net/avrdudess-a-gui-for-avrdude/)</br>
 Per caricare il Firmware e' necessario inserire i seguenti parametri nel software:
 - **Programmer (-c)** : *Arduino*
 - **Port (-P)** : la porta COM a cui e' connessa la scheda Arduino
@@ -41,6 +42,17 @@ Per caricare il Firmware e' necessario inserire i seguenti parametri nel softwar
 - **Flash** : il file FirmWare.hex scaricato
 - Infine premere **Programm**
 <img src="https://github.com/TheFidax/ProgrammerUpdaterShield/blob/main/images/AVRDUDESS.jpg" width="1280">
+
+------------
+
+## Caricare FirmWare su un Dispositivo
+Per caricare un FirmWare/Skecth in formato .HEX su un dispositivo sono necessari i seguenti passaggi (sono **molto** simili a quelli per caricare il Firmware della Shield, ma **non identici**):
+- **Programmer (-c)** : *Arduino*
+- **Port (-P)** : la porta COM a cui e' connessa la scheda Arduino
+- **Baud rate (-b)** : **19200**
+- Premere **Detect** : Nella *console* verra' restituito il modello del Micro che *si intende programmare*
+- **Flash** : il file .hex che si vuole caricare
+- Infine premere **Programm**
 
 ------------
 
