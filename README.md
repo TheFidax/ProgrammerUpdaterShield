@@ -73,7 +73,7 @@ In sviluppo.
 #### **Porta AVR ISP**</br>
 
 <img src="https://github.com/TheFidax/ProgrammerUpdaterShield/blob/main/images/avr_isp.jpg" width="1280">
-La porta AVER ISP permette alla Shield di interfacciarsi con i target esterni e rispecchia lo schema standard degli AVR:</br>
+La porta AVR ISP permette alla Shield di interfacciarsi con i target esterni e rispecchia lo schema standard degli AVR:</br>
 <img src="https://www.waveshare.com/img/devkit/general/10-pin_ISP_Connector_standard.jpg" width="400"></br>
 
 **N.B.** Il pin *VCC* e' collegato alla linea **5 volt**.
