@@ -89,7 +89,7 @@ Questa porta svolge la doppia funzione di **Porta ISP** e **Porta I2C**.</br>
 
 <img src="https://github.com/TheFidax/ProgrammerUpdaterShield/blob/main/images/jst_scheme.jpg" width="1280"></br>
 
-Tale porta fornisce inoltre il Bus I2C mediante il seguente schema:</br>
+Tale porta fornisce il Bus I2C mediante il seguente schema:</br>
 <img src="https://github.com/TheFidax/ProgrammerUpdaterShield/blob/main/images/jst_i2c.jpg" width="600">
 
 ------------
