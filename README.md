@@ -1,4 +1,4 @@
-## Video Presentazione Shield
+## Video Presentazione della Shield
 
 
 [![Video Presentazione](https://img.youtube.com/vi/W56MJeqaCEg/0.jpg)](http://www.youtube.com/watch?v=W56MJeqaCEg)
@@ -37,7 +37,7 @@ Per caricare il Firmware e' necessario inserire i seguenti parametri nel softwar
 - **Programmer (-c)** : *Arduino*
 - **Port (-P)** : la porta COM a cui e' connessa la scheda Arduino
 - **Baud rate (-b)** : 115200
-- Premere **Detect** : Nel *console* verra' restituito il modello del Micro montato sulla Scheda
+- Premere **Detect** : Nella *console* verra' restituito il modello del Micro montato sulla Scheda
 - **Flash** : il file FIrmWare.hex scaricato
 - Infine premere **Programm**
 <img src="https://github.com/TheFidax/ProgrammerUpdaterShield/blob/main/images/AVRDUDESS.jpg" width="1280">
