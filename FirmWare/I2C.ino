@@ -102,7 +102,10 @@ int8_t parseCommand(struct SerialCommands *data) {
             sendAnswer(data->command, data->args[0], data->args[1], Value, 1);    // Invio il dato Letto come risposta
             break;
         }
-        default: {  return -1; }                                                  // Comando ricevuto NON valido
+        default: {                                                                // Comando ricevuto NON valido
+            sendAnswer(data->command, -1, -1, -1, -1);                            // Informo del Comando non valido
+            return -1;                                                            // Restituisco errore
+        }
     }
 
     return 0;
