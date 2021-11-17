@@ -1,5 +1,5 @@
 #include <Wire.h>
-#include <SusiOverI2c.h>
+#include <WireSusi.h>
 
 /*
 *   FORMATO MESSAGGIO SERIALE:
@@ -72,7 +72,7 @@ int8_t readCommand(struct SerialCommands *data) {
 int8_t parseCommand(struct SerialCommands *data) {
     switch(data->command) {
         case 'v': {                                                               // Richiesta versione FirmWare
-            sendAnswer(data->command, FIRMWARE_VERSION, 0, 0, 1);
+            sendAnswer(data->command, FIRMWARE_VERSION_HIGH_VALUE, FIRMWARE_VERSION_LOW_VALUE, 0, 1);
             break;
         }
         case 'r': {                                                               // Ricerca il dispositivo con Indirizzo specificato 
@@ -88,17 +88,17 @@ int8_t parseCommand(struct SerialCommands *data) {
             break;
         }
         case 'C': {                                                               // Invio comando SusiOverI2c
-            int8_t error = sendCommandSusiOverI2c(data->args[0], data->args[1], data->args[2]);   // Invio il comando
-            sendAnswer(data->command, data->args[0], data->args[1], data->args[2], error);        // Rispondo se l'invio del comando e' avvenuta con successo o meno
+            int8_t error = sendCommandWireSusi(data->args[0], data->args[1], data->args[2]);    // Invio il comando
+            sendAnswer(data->command, data->args[0], data->args[1], data->args[2], error);      // Rispondo se l'invio del comando e' avvenuta con successo o meno
             break;
         }
         case 'R': {                                                               // Richiesta Lettura CVs
-            uint8_t Value = readCVsSusiOverI2c(data->args[0], data->args[1]);     // Leggo la CV
+            uint8_t Value = readCVsWireSusi(data->args[0], data->args[1]);        // Leggo la CV
             sendAnswer(data->command, data->args[0], data->args[1], Value, 1);    // Invio il dato Letto come risposta
             break;
         }
         case 'W': {                                                               // Richiesta Scrittura CVs
-            uint8_t Value = writeCVsSusiOverI2c(data->args[0], data->args[1], data->args[2]);     // Scrivo la CV
+            uint8_t Value = writeCVsWireSusi(data->args[0], data->args[1], data->args[2]);      // Scrivo la CV
             sendAnswer(data->command, data->args[0], data->args[1], Value, 1);    // Invio il dato Letto come risposta
             break;
         }
