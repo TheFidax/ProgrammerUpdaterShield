@@ -94,12 +94,22 @@ int8_t parseCommand(struct SerialCommands *data) {
         }
         case 'R': {                                                               // Richiesta Lettura CVs
             uint8_t Value = readCVsWireSusi(data->args[0], data->args[1]);        // Leggo la CV
-            sendAnswer(data->command, data->args[0], data->args[1], Value, 1);    // Invio il dato Letto come risposta
+            if(Value != -1) {                                                     // Controllo che la comunicazione sia andata a Buon fine
+                sendAnswer(data->command, data->args[0], data->args[1], Value, 1);    // Invio il dato Letto come risposta
+            }
+            else {                                                                // Se ci sono stati problemi
+                sendAnswer(data->command, data->args[0], data->args[1], -1, -1);      // Invio -1 come esisto operazione
+            }
             break;
         }
         case 'W': {                                                               // Richiesta Scrittura CVs
             uint8_t Value = writeCVsWireSusi(data->args[0], data->args[1], data->args[2]);      // Scrivo la CV
-            sendAnswer(data->command, data->args[0], data->args[1], Value, 1);    // Invio il dato Letto come risposta
+            if(Value != -1) {                                                     // Controllo che la comunicazione sia andata a Buon fine
+                sendAnswer(data->command, data->args[0], data->args[1], Value, 1);    // Invio il dato Letto come risposta
+            }
+            else {                                                                // Se ci sono stati problemi
+                sendAnswer(data->command, data->args[0], data->args[1], -1, -1);      // Invio -1 come esisto operazione
+            }
             break;
         }
         default: {                                                                // Comando ricevuto NON valido
