@@ -37,6 +37,7 @@ void setup_ArduinoI2C() {
 
     Wire.begin(0x00);                                                             // Avvio il Bus I2c con indirizzo 0
     Wire.setClock(400000);                                                        // Imposto la frequenza del Bus I2c a 400kHz
+    Wire.setWireTimeout(1000, true);                                              // Imposto un Timeout preventivo, se il bus I2c si blocca, evito il blocco dell'intero codice
 }
 
 void loop_ArduinoI2C() {
