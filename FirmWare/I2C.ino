@@ -50,7 +50,7 @@ void setup_ArduinoI2C() {
 
     Wire.begin(0x00);                                                                 // Avvio il Bus I2c con indirizzo 0
     Wire.setClock(400000);                                                            // Imposto la frequenza del Bus I2c a 400kHz
-    Wire.setWireTimeout(1000, true);                                                  // Imposto un Timeout preventivo, se il bus I2c si blocca, evito il blocco dell'intero codice
+    Wire.setWireTimeout(2000, true);                                                  // Imposto un Timeout preventivo, se il bus I2c si blocca, evito il blocco dell'intero codice
     Wire.onReceive(WireToUartBridge_Handle);                                          // Handle per la ricezione di dati Wire quando il programmatore e' slave
 }
 
@@ -113,17 +113,17 @@ int8_t parseCommand(struct SerialCommands *data) {
                 sendAnswer(data->command, data->args[0], data->args[1], Value, 1);    // Invio il dato Letto come risposta
             }
             else {                                                                    // Se ci sono stati problemi
-                sendAnswer(data->command, data->args[0], data->args[1], -1, -1);      // Invio -1 come esisto operazione
+                sendAnswer(data->command, data->args[0], data->args[1], Value, -1);      // Invio -1 come esisto operazione
             }
             break;
         }
         case 'W': {                                                                   // Richiesta Scrittura CVs
             int16_t Value = writeCVsWireSusi(data->args[0], data->args[1], data->args[2]);      // Scrivo la CV
-            if(Value != -1) {                                                         // Controllo che la comunicazione sia andata a Buon fine
+            if(Value == data->args[2]) {                                              // Controllo che il valore letto post scrittur corrisponda a quello richiesto
                 sendAnswer(data->command, data->args[0], data->args[1], Value, 1);    // Invio il dato Letto come risposta
             }
             else {                                                                    // Se ci sono stati problemi
-                sendAnswer(data->command, data->args[0], data->args[1], -1, -1);      // Invio -1 come esisto operazione
+                sendAnswer(data->command, data->args[0], data->args[1], Value, -1);      // Invio -1 come esisto operazione
             }
             break;
         }
