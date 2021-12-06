@@ -1,7 +1,7 @@
 #include "Arduino.h"
 
 #define FIRMWARE_VERSION_HIGH_VALUE     0   //0.
-#define FIRMWARE_VERSION_LOW_VALUE      2   // .2 -> 0.2
+#define FIRMWARE_VERSION_LOW_VALUE      3   // .3 -> 0.3
 
 #define ISP_LED 6
 #define I2C_LED 5
