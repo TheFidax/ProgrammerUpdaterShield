@@ -34,11 +34,13 @@ int8_t  parseCommand(struct SerialCommands *data);                              
 void    sendAnswer(char command, int arg1, int arg2, int arg3, int esito);            // Risponde restituendo una copia del comando e l'esito dell'Operazione
 
 void WireToUartBridge_Handle(int nBytes) {                                            // Handle invocato quando il dispositivo diventa Slave Wire
-    if(WireToUartBridge) {                                                            // Se la Modalita' Bridge e' attiva
-        for(uint8_t i = 0; i < nBytes; ++i) {                                         // Per ogni byte ricevuto
-            Serial.print(Wire.read());                                                // Lo scrivo sulla Seriale
+    for(uint8_t i = 0; i < nBytes; ++i) {                                             // Per ogni byte presente nel Buffer
+        uint8_t Data = Wire.read();                                                   // Acquisisco il primo Byte nel Buffer
+        if(WireToUartBridge) {                                                        // Se la Modalita' Bridge e' attiva
+            Serial.print(Wire.read());                                                // Scrivo il dato sulla Seriale
         }
-    } 
+        //else {}                                                                     // Se la modalita' Bridge non e' attiva non faccio nulla, il buffer l'ho gia' svuotato
+    }
 }
 
 void setup_ArduinoI2C() {
