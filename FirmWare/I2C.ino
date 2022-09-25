@@ -37,7 +37,7 @@ void WireToUartBridge_Handle(int nBytes) {                                      
     for(uint8_t i = 0; i < nBytes; ++i) {                                             // Per ogni byte presente nel Buffer
         uint8_t Data = Wire.read();                                                   // Acquisisco il primo Byte nel Buffer
         if(WireToUartBridge) {                                                        // Se la Modalita' Bridge e' attiva
-            Serial.print(Wire.read());                                                // Scrivo il dato sulla Seriale
+            Serial.print(Data);                                                       // Scrivo il dato sulla Seriale
         }
         //else {}                                                                     // Se la modalita' Bridge non e' attiva non faccio nulla, il buffer l'ho gia' svuotato
     }
