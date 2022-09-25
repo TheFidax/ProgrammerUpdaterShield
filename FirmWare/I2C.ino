@@ -8,7 +8,6 @@
 *     arg1: argomento 1
 *     arg2: ...
 *     arg3: ...
-*     arg4: ...
 *   
 *   LA RISPOSTA HA IL SEGUENTE FORMATO
 *   <c arg1 arg2 arg3 esito>
@@ -16,7 +15,6 @@
 *     arg1: argomento 1
 *     arg2: ...
 *     arg3: ...
-*     arg4: ...
 *     esito: 1 se l'operazione e' riuscita, -1 altrimenti
  */
 
@@ -36,10 +34,9 @@ int8_t  parseCommand(struct SerialCommands *data);                              
 void    sendAnswer(char command, int arg1, int arg2, int arg3, int esito);            // Risponde restituendo una copia del comando e l'esito dell'Operazione
 
 void WireToUartBridge_Handle(int nBytes) {                                            // Handle invocato quando il dispositivo diventa Slave Wire
-    Serial.println(nBytes);
     if(WireToUartBridge) {                                                            // Se la Modalita' Bridge e' attiva
-        while(Wire.available()) {                                                     // Se ci sono dei Byte nel Buffer Wire
-            Serial.print(Wire.read());                                                // Li scrivo sulla Seriale
+        for(uint8_t i = 0; i < nBytes; ++i) {                                         // Per ogni byte ricevuto
+            Serial.print(Wire.read());                                                // Lo scrivo sulla Seriale
         }
     } 
 }
