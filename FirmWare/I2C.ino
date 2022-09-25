@@ -26,7 +26,7 @@ struct SerialCommands{
 };
 
 /*  Variabili Globali */
-uint8_t WireToUartBridge = true;                                                     // Identifica se e' attiva la modalita' di Bridge Wire to Serial (de Default NO : falso)
+uint8_t WireToUartBridge;                                                             // Identifica se e' attiva la modalita' di Bridge Wire to Serial (de Default NO : falso)
 
 /*  Prototipi   */
 int8_t  readCommand(struct SerialCommands *data);                                     // Funzione che legge i comandi ricevuti tramite Seriale
